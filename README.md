@@ -21,21 +21,17 @@ docker-compose exec kafka kafka-console-producer --bootstrap-server localhost:90
 5. Abra um novo terminal para cada fila de tamanho de palavras: pequenas (até 3 caracteres), médias (até 6 caracteres), grandes (até 12 caracteres) e gigantes (maiores de 12 caracteres)
  
 ```
-docker-compose exec kafka  \
-kafka-console-consumer --bootstrap-server localhost:9092 --topic pequenas --from-beginning
+docker-compose exec kafka kafka-console-consumer --bootstrap-server localhost:9092 --topic pequenas --from-beginning
 ```
  
 ```
-docker-compose exec kafka  \
-kafka-console-consumer --bootstrap-server localhost:9092 --topic medias --from-beginning
+docker-compose exec kafka kafka-console-consumer --bootstrap-server localhost:9092 --topic medias --from-beginning
 ```
 ```
-docker-compose exec kafka  \
-kafka-console-consumer --bootstrap-server localhost:9092 --topic grandes --from-beginning
+docker-compose exec kafka kafka-console-consumer --bootstrap-server localhost:9092 --topic grandes --from-beginning
 ```
 ```
-docker-compose exec kafka  \
-kafka-console-consumer --bootstrap-server localhost:9092 --topic gigantes --from-beginning
+docker-compose exec kafka kafka-console-consumer --bootstrap-server localhost:9092 --topic gigantes --from-beginning
 ``` 
  
  
